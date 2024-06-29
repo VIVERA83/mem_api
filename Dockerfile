@@ -1,5 +1,5 @@
 FROM python:3.12.3
-WORKDIR meme_center
+WORKDIR mem_api
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
@@ -36,6 +36,6 @@ ENV S3_PORT=8005
 RUN pip install --upgrade pip  --no-cache-dir
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY meme_center .
+COPY mem_api .
 
 CMD python main.py
