@@ -17,7 +17,7 @@ class Base(BaseSettings):
 
     model_config = ConfigDict(
         env_nested_delimiter="__",
-        env_file=os.path.join(BASE_DIR, ".env_mem_api"),
+        env_file=os.path.join(BASE_DIR, ".env"),
         enf_file_encoding="utf-8",
         extra="ignore",
     )
