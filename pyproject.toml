@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+asyncio_mode = "auto"
+pythonpath = [
+    "mem_api",
+    "tests"
+]
